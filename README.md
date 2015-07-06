@@ -1,6 +1,13 @@
 # Server at *.zufallston.de
 
+This is the server we got from Catalyst for the hackaton, the default user is
+`hacker46`, you can authenticate per password or add your public ssh-key to
+`authorized_keys` (if you don't have the password).
+
 ## sites-available
+
+This folder contains configs for the `nginx`-server, adding files here has no
+effect, since they need to be linked to `sites-enabled` on the server.
 
 ### play.zufallston.de
 
