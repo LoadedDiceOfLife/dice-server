@@ -1,0 +1,12 @@
+upstream pull_handler {
+  server 127.0.0.1:8081;
+  keepalive 8;
+}
+
+server {
+  server_name pull.zufallston.de;
+  include auth.conf;
+  location / {
+    proxy_pass http://127.0.0.1:8081/;
+  }
+}
